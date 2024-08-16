@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+main {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Introducción a los Servicios */
+.services-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #333, #666);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.services-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.services-intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Sección de Servicios */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 20px;
+}
+
+.service-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-info p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Galería de Servicios */
+.gallery {
+    padding: 20px;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonios */
+.testimonials {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #333;
+    background: #f9f9f9;
+}
+
+.testimonial p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Llamada a la Acción (CTA) */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cont {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #e94e77;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cont:hover {
+    background: #d43f62;
+}
+/* Responsividad */
+
+/* Ajustes para pantallas pequeñas (smartphones) */
+@media (max-width: 768px) {
+    /* Ajustar el padding general del main */
+    main {
+        padding: 10px;
+    }
+
+    /* Servicios - Reemplazar grid por un diseño en columnas */
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    /* Galería - Reemplazar grid por un diseño en columnas */
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-images img {
+        height: 150px;
+    }
+
+    /* Testimonios - Ajustes para pantallas pequeñas */
+    .testimonials {
+        padding: 10px;
+    }
+
+    .testimonial {
+        font-size: 0.9em;
+    }
+
+    /* CTA - Ajustes para pantallas pequeñas */
+    .cta {
+        padding: 20px 10px;
+    }
+
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .cont {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    /* Servicios - Ajustar columnas a 2 para tablets */
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Galería - Ajustar columnas a 2 para tablets */
+    .gallery-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ajustes para pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+    /* Servicios - Ajustar columnas a 3 para desktops */
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Galería - Ajustar columnas a 3 para desktops */
+    .gallery-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

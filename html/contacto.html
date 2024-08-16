@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkLife - Contacto</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">INKLIFE</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h1 class="titulo-contacto">Contacto</h1>
+                    <p class="descripcion-contacto">Estamos aquí para ayudarte. Si tienes alguna pregunta o deseas agendar una cita, no dudes en ponerte en contacto con nosotros.</p>
+                </div>
+                
+                <div class="contact-sections">
+                    <div class="contact-card">
+                        <h2>Información de Contacto</h2>
+                        <div class="info-contacto">
+                            <p><i class="fas fa-map-marker-alt"></i> Dirección: Avenida 6 # 35-20, Cali, Colombia</p>
+                            <p><i class="fas fa-phone"></i> Teléfono: (+57) 302 6074009</p>
+                            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contacto@inklife.com">lauraInklife@inklife.com</a></p>
+                        </div>                        
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h2>Envíanos un Mensaje</h2>
+                        <form id="contact-form" action="#" method="post" class="formulario-contacto">
+                            <label for="name" class="etiqueta">Nombre:</label>
+                            <input type="text" id="name" name="name" required class="input-contacto">
+                            
+                            <label for="email" class="etiqueta">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required class="input-contacto">
+                            
+                            <label for="message" class="etiqueta">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4" required class="textarea-contacto"></textarea>
+                            
+                            <button type="submit" class="boton-enviar">Enviar</button>
+                        </form>
+                        
+                    </div>
+                    
+                    
+                    <div class="contact-card">
+                        <h2>Encuéntranos Aquí</h2>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19809.91716890549!2d-76.53087171662154!3d3.437191533330404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a08d4bce5e93d%3A0x32b65fc7c1f357e5!2sCentro%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2ses!4v1585641323354!5m2!1ses!2ses" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                            </iframe>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 InkLife. Arte que te define, tinta que te inspira.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>¡Mensaje Enviado!</h2>
+            <p>Tu mensaje ha sido enviado con éxito. En breve recibirás un correo de confirmación.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío real del formulario
+        
+            // Mostrar el modal
+            document.getElementById('success-modal').style.display = 'block';
+            
+            // Opcional: Limpiar el formulario después de enviar
+            this.reset();
+        });
+        
+        // Obtener el modal y el botón de cerrar
+        var modal = document.getElementById('success-modal');
+        var closeBtn = document.querySelector('.close-btn');
+        
+        // Cuando el usuario haga clic en el botón de cerrar, ocultar el modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+        
+        // Cuando el usuario haga clic fuera del modal, también ocultarlo
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

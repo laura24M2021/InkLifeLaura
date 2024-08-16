@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkLife - Salón de Tatuajes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<style>
+    /* Estilos generales para pantallas grandes */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .gallery img {
+        width: 30%;
+    }
+}
+
+/* Estilos para tablets y pantallas medianas */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .gallery img {
+        width: 48%;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .gallery img {
+        width: 100%;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">INKLIFE</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./html/servicios.html">Servicios</a></li>
+                <li><a href="./html/galeria.html">Galería</a></li>
+                <li><a href="./html/equipo.html">Equipo</a></li>
+                <li><a href="./html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="img/galeria/home2.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <h1>Bienvenido a InkLife</h1>
+            <p>Tu destino para tatuajes únicos y de alta calidad</p>
+            <a href="#about" class="cta-button">Conócenos</a>
+        </section>
+        
+
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>InkLife es un salón de tatuajes premium ubicado en el corazón de la ciudad. Con más de 10 años de experiencia, nuestro equipo de artistas talentosos está dedicado a crear obras de arte únicas en tu piel.</p>
+            <a href="./html/equipo.html" class="cont">Conose nuestro Equipo</a>
+        </section>
+
+        <section class="featured-work">
+            <h2>Trabajos Destacados</h2>
+            <div class="gallery">
+                <img src="img/galeria/tatuaje1.jpg" alt="Tatuaje 1">
+                <img src="img/galeria/tatuaje2.jpg" alt="Tatuaje 2">
+                <img src="img/galeria/tatuaje3.jpg" alt="Tatuaje 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 InkLife. Arte que te define, tinta que te inspira.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

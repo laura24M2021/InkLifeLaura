@@ -1,0 +1,203 @@
+.contact {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h1,
+.contact-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.descripcion-contacto {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.info-contacto p {
+    margin: 10px 0;
+}
+
+.info-contacto a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.info-contacto a:hover {
+    text-decoration: underline;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.etiqueta {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-contacto,
+.textarea-contacto {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+.boton-enviar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #e94e77;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background: #d43f62;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Estilos para el Modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 500px; /* Ancho máximo del modal */
+    text-align: center;
+    border-radius: 8px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal p {
+    font-size: 16px;
+}
+  /* Pantallas muy pequeñas (teléfonos verticales) */
+  @media (max-width: 480px) {
+    .contact-sections {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Pantallas grandes (escritorios grandes) */
+@media (min-width: 1200px) {
+    .contact {
+        padding: 60px 40px;
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
+    .modal-content {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario-contacto {
+        width: 100%;
+    }
+
+    .contact-card {
+        margin-bottom: 20px;
+    }
+}
+/* Mapa */
+.map-container {
+    padding-top: 75%; /* Aspect Ratio de 4:3 en pantallas pequeñas */
+}
+
+@media (min-width: 1024px) {
+    .map-container {
+        padding-top: 56.25%; /* Aspect Ratio 16:9 en pantallas grandes */
+    }
+}
+
+/* Modal */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 90%;
+    }
+}

@@ -1,0 +1,189 @@
+/* Estilos para la sección del equipo */
+.team {
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.team-member h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+}
+
+    /* Pantallas pequeñas (teléfonos) */
+    @media (max-width: 768px) {
+        .team {
+            padding: 20px;
+        }
+    
+        .team-member {
+            margin: 10px 0;
+            padding: 15px;
+        }
+    
+        .team-member img {
+            width: 100%;
+            height: auto;
+        }
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        .team-member h2 {
+            font-size: 1.2rem;
+        }
+    
+        .team-member p {
+            font-size: 0.9rem;
+        }
+    }
+    
+    /* Pantallas medianas (tabletas) */
+    @media (max-width: 1024px) {
+        .team {
+            padding: 25px;
+        }
+    
+        .team-member {
+            margin: 15px;
+        }
+    
+        h1 {
+            font-size: 2.2rem;
+        }
+    
+        .team-member h2 {
+            font-size: 1.4rem;
+        }
+    }
+    
+    /* Pantallas grandes (escritorios grandes) */
+    @media (min-width: 1200px) {
+        .team {
+            padding: 40px;
+        }
+    
+        h1 {
+            font-size: 3rem;
+        }
+    
+        .team-member h2 {
+            font-size: 1.8rem;
+        }
+    
+        .team-member p {
+            font-size: 1.1rem;
+        }
+    }
+    @media (max-width: 768px) {
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .team-member {
+            width: 100%;
+        }
+    }
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+        }
+    
+        nav ul li {
+            padding: 10px 0;
+        }
+    
+        footer p {
+            font-size: 0.8rem;
+        }
+    }
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Espacio entre las tarjetas */
+    }
+
+    .team-member {
+        flex: 1 1 300px; /* El ancho mínimo de cada tarjeta será de 300px */
+        max-width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .team-member h2 {
+        font-size: 1.5em;
+        margin: 15px 0 10px;
+    }
+
+    .team-member p {
+        font-size: 1em;
+        color: #666;
+    }
+
+    @media (max-width: 600px) {
+        .team-member {
+            flex: 1 1 100%;
+        }
+    }
