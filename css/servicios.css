@@ -22,59 +22,114 @@ main {
     color: #fff;
     border-radius: 10px;
     margin-bottom: 40px;
-}
-
-.services-intro h1 {
+  }
+  
+  .services-intro h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-}
-
-.services-intro p {
+  }
+  
+  .services-intro p {
     font-size: 1.2em;
     line-height: 1.6;
-}
-
-/* Sección de Servicios */
-.services {
+  }
+  
+  /* Sección de Servicios */
+  .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-}
-
-.service-item {
+  }
+  
+  .service-item {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
-}
-
-.service-item:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .service-item:hover {
     transform: scale(1.05);
-}
-
-.service-item img {
+  }
+  
+  .service-item img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
-
-.service-info {
+  }
+  
+  .service-info {
     padding: 20px;
-}
-
-.service-info h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .service-info h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #333;
-}
-
-.service-info p {
+  }
+  
+  .service-info p {
     font-size: 1em;
     line-height: 1.5;
     color: #666;
-}
+    flex-grow: 1;
+  }
+  
+  .service-price {
+    font-size: 1px;
+    color: #27ae60;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  
+  .service-price::before {
+    content: 'Precio: ';
+    font-weight: normal;
+    color: #333;
+  }
+  
+  /* Estilos Responsive */
+  @media (min-width: 768px) {
+    .services-intro {
+      padding: 60px 20px;
+    }
+  
+    .services {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  
+    .service-info h3 {
+      font-size: 2em;
+    }
+  
+    .service-price {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .service-info {
+      padding: 30px;
+    }
+  
+    .service-info h3 {
+      font-size: 2.2em;
+    }
+  
+    .service-price {
+      font-size: 1.8em;
+    }
+  }
 
 /* Galería de Servicios */
 .gallery {
@@ -256,3 +311,99 @@ main {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Sección de Seguridad */
+.security {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+.security h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.security p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+  .services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-video {
+    width: 100%;
+    border-bottom: 4px solid #eaeaea;
+  }
+  
+  .service-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .service-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Diseño responsive */
+  @media (min-width: 768px) {
+    .services-section {
+      padding: 60px 20px;
+    }
+  
+    .service-title {
+      font-size: 2em;
+    }
+  
+    .service-description {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .service-info {
+      padding: 30px;
+    }
+  
+    .service-title {
+      font-size: 2.2em;
+    }
+  
+    .service-description {
+      font-size: 1.2em;
+    }
+  }

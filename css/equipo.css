@@ -169,7 +169,9 @@ h1 {
     .team-member img {
         width: 100%;
         height: auto;
-        border-radius: 50%;
+        border-radius: 0.5rem;
+        border-bottom-left-radius: 3rem;
+        border-top-right-radius: 3rem;
     }
 
     .team-member h2 {

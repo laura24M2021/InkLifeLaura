@@ -24,33 +24,107 @@
     <main>
         <section class="services-intro">
             <h1>Descubre Nuestros Servicios</h1>
-            <p>En InkLife, nos especializamos en ofrecer una variedad de servicios de tatuaje que van desde diseños personalizados hasta retoques y reparaciones. Nuestro equipo de artistas talentosos está listo para transformar tus ideas en impresionantes obras de arte. Explora lo que tenemos para ofrecerte y no dudes en ponerte en contacto con nosotros para cualquier consulta o cita.</p>
-        </section>
-
-        <h2>Nuestros Servicios Destacados</h2>
-        <section class="services">
-            <div class="service-item">
-                <img src="../img/diseno-personalizado.jpg" alt="Diseño Personalizado">
-                <div class="service-info">
+            <p>
+              En InkLife, nos especializamos en ofrecer una variedad de servicios de tatuaje que van desde diseños personalizados hasta retoques y reparaciones. Nuestro equipo de artistas talentosos está listo para transformar tus ideas en impresionantes obras de arte. Explora lo que tenemos para ofrecerte y no dudes en ponerte en contacto con nosotros para cualquier consulta o cita.
+            </p>
+          </section>
+          
+          <h2>Nuestros Servicios Destacados</h2>
+          <section class="services">
+            <div class="service-item" onclick="this.classList.toggle('flipped')">
+              <div class="service-card">
+                <div class="service-front">
+                  <img src="../img/diseno-personalizado.jpg" alt="Diseño Personalizado">
+                  <div class="service-info">
                     <h3>Diseño Personalizado</h3>
                     <p>Ofrecemos tatuajes personalizados diseñados en colaboración contigo. Trae tus ideas y nosotros las haremos realidad.</p>
+                  </div>
                 </div>
+                <div class="service-back">
+                  <div class="service-price">Desde COP 300,000 hasta COP 800,000</div>
+                </div>
+              </div>
             </div>
-            <div class="service-item">
-                <img src="../img/tatuajes-tradicionales.jpg" alt="Tatuajes Tradicionales">
-                <div class="service-info">
+          
+            <div class="service-item" onclick="this.classList.toggle('flipped')">
+              <div class="service-card">
+                <div class="service-front">
+                  <img src="../img/tatuajes-tradicionales.jpg" alt="Tatuajes Tradicionales">
+                  <div class="service-info">
                     <h3>Tatuajes Tradicionales</h3>
                     <p>Desde diseños clásicos hasta estilos modernos, nuestros artistas tienen la habilidad para realizar tatuajes tradicionales.</p>
+                  </div>
                 </div>
+                <div class="service-back">
+                  <div class="service-price">Desde COP 200,000 hasta COP 500,000</div>
+                </div>
+              </div>
             </div>
-            <div class="service-item">
-                <img src="../img/retoques-reparaciones.jpg" alt="Retoques y Reparaciones">
-                <div class="service-info">
+          
+            <div class="service-item" onclick="this.classList.toggle('flipped')">
+              <div class="service-card">
+                <div class="service-front">
+                  <img src="../img/retoques-reparaciones.jpg" alt="Retoques y Reparaciones">
+                  <div class="service-info">
                     <h3>Retoques y Reparaciones</h3>
                     <p>¿Tienes un tatuaje que necesita un retoque o reparación? Nuestro equipo puede mejorar o restaurar tu diseño.</p>
+                  </div>
                 </div>
+                <div class="service-back">
+                  <div class="service-price">Desde COP 150,000 hasta COP 350,000</div>
+                </div>
+              </div>
             </div>
+          </section>
+
+        <section class="security">
+            <h2>Seguridad y Garantía</h2>
+            <p>En InkLife, nos tomamos la seguridad y la satisfacción de nuestros clientes muy en serio. Utilizamos solo los mejores productos y equipos esterilizados para garantizar que cada tatuaje sea seguro y de la más alta calidad. Además, ofrecemos una garantía de satisfacción que cubre cualquier retoque necesario si tu tatuaje no cura como esperabas.</p>
+            <p>Si experimentas algún problema con tu tatuaje, nuestro equipo está aquí para ayudarte. Contáctanos lo antes posible, y evaluaremos la situación para asegurarnos de que estés completamente satisfecho con tu experiencia en InkLife.</p>
+            <p>Tu salud y bienestar son nuestra prioridad, por lo que seguimos estrictamente todas las normativas de seguridad y desinfección. Puedes confiar en que estás en buenas manos cuando eliges InkLife.</p>
         </section>
+
+        <section class="services-section">
+            <div class="service-item">
+              <video class="service-video" controls>
+                <source src="../img/videos/asesoriaCompleta.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+              </video>
+              <div class="service-info">
+                <h3 class="service-title">Asesoría Completa</h3>
+                <p class="service-description">
+                  Nuestro equipo ofrece asesoría personalizada para ayudarte a definir y perfeccionar la idea de tu tatuaje. Nos aseguramos de que entiendas cada paso del proceso, desde el diseño inicial hasta los cuidados posteriores, para que te sientas completamente seguro y satisfecho con tu decisión.
+                </p>
+              </div>
+            </div>
+          
+            <div class="service-item">
+              <video class="service-video" controls>
+                <source src="../img/videos/productos.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+              </video>
+              <div class="service-info">
+                <h3 class="service-title">Nuestros Productos de Calidad</h3>
+                <p class="service-description">
+                  En InkLife utilizamos solo productos de la más alta calidad. Desde las tintas hasta las agujas, cada componente es seleccionado para garantizar la seguridad y durabilidad de tu tatuaje. Conócenos y descubre cómo nos aseguramos de que cada tatuaje que realizamos sea de la mejor calidad posible.
+                </p>
+              </div>
+            </div>
+          
+            <div class="service-item">
+              <video class="service-video" controls>
+                <source src="../img/videos/tatuando.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+              </video>
+              <div class="service-info">
+                <h3 class="service-title">Proceso de Tatuado</h3>
+                <p class="service-description">
+                  Mira cómo nuestros artistas trabajan con precisión y detalle para crear impresionantes obras de arte en la piel. Desde la preparación hasta los últimos toques, cuidamos cada aspecto del proceso de tatuado para asegurar un resultado que exceda tus expectativas.
+                </p>
+              </div>
+            </div>
+          </section>
+
         <section class="testimonials">
             <h2>Lo Que Dicen Nuestros Clientes</h2>
             <div class="testimonial">
