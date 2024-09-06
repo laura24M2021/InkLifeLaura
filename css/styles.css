@@ -102,3 +102,85 @@ section {
     background: #d43f62;
 }
 
+
+
+/* Sección general */
+.services-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Item del servicio */
+.service-item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos del video */
+.service-video {
+    width: 100%; /* Aseguramos que ocupe el ancho máximo disponible */
+    max-height: 650px; /* Limitar la altura máxima del video */
+    object-fit: cover; /* Ajustar el video dentro del espacio asignado */
+    background-color: #000; /* Fondo negro cuando el video no se carga */
+}
+
+/* Información del servicio */
+.service-info {
+    padding: 30px;
+    text-align: center;
+}
+
+.service-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.service-description {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .service-item {
+        max-width: 100%;
+    }
+
+    .service-title {
+        font-size: 1.8em;
+    }
+
+    .service-description {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .service-item {
+        max-width: 1000px;
+    }
+
+    .service-title {
+        font-size: 2.2em;
+    }
+
+    .service-description {
+        font-size: 1.3em;
+    }
+}
